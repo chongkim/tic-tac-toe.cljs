@@ -1,0 +1,1 @@
+rm -rf spec src public target bin project.clj
