@@ -1,0 +1,12 @@
+#ttt-table {
+  width: 306px;
+}
+
+.cell {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  float: left;
+  font-size: 4em;
+  text-align: center;
+}

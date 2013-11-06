@@ -3,6 +3,7 @@
   (:require [specljs.core]
             [ttt.engine :refer [minimax best-move]]))
 
+
 (describe "ttt.engine"
   (context "minimax"
     (it "determines a win for x"
@@ -10,7 +11,9 @@
     (it "determines a win for o"
       (should= -100 (minimax {:board '[o o o, - - -, - - -] :turn 'o})))
     (it "determines a draw"
-      (should= 0 (minimax {:board '[o x o, x o x, x o x] :turn 'x})))
+      (should= 0 (minimax {:board '[o x o
+                                    x o x
+                                    x o x] :turn 'o})))
     (it "determines a win for x in 1 move"
       (should= 107 (minimax {:board '[x x -, - - -, - - -] :turn 'x})))
     (it "determines a win for o in 1 move"
